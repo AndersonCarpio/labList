@@ -6,4 +6,6 @@ struct Node {
 };
 
 int length(struct Node* head);
+struct Node* buildOneTwoThree();
+
 #endif
