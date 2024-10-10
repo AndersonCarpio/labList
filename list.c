@@ -10,22 +10,15 @@ int length(struct Node* head){
 }
 
 struct Node* buildOneTwoThree(){
-  struct Node* head = NULL;
-  struct Node* second = NULL;
-  struct Node* third = NULL;
-
-  head = malloc(sizeof(struct Node));
-  second = malloc(sizeof(struct Node));
-  third = malloc(sizeof(struct Node));
-
+  struct Node* head = malloc(sizeof(struct Node));
   head->data = 1;
-  head->next = second;
+  head->next = malloc(sizeof(struct Node));
 
-  second->data = 2;
-  second->next = third;
+  head->next->data = 2;
+  head->next->next = malloc(sizeof(struct Node));
 
-  third->data = 1;
-  third->next = 0;
+  head->next->next->data = 1;
+  head->next->next->next = 0;
 
   return head;
 }
