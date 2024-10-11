@@ -8,4 +8,5 @@ struct Node {
 int length(struct Node* head);
 struct Node* buildOneTwoThree();
 int count(struct Node* head, int searchFor);
+int getNth(struct Node* head, int index);
 #endif

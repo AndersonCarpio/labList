@@ -32,5 +32,7 @@ int count(struct Node* head, int searchFor){
     }
 
     return counter;
+}
 
+int getNth(struct Node* head, int index){
 }
