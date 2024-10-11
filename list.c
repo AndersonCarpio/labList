@@ -17,7 +17,7 @@ struct Node* buildOneTwoThree(){
     head->next->data = 2;
     head->next->next = malloc(sizeof(struct Node));
 
-    head->next->next->data = 1;
+    head->next->next->data = 3;
     head->next->next->next = 0;
 
     return head;
