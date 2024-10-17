@@ -1,4 +1,5 @@
 #include<stdlib.h>
+#include<assert.h>
 #include "list.h"
 int length(struct Node* head){
     int count = 0;
@@ -35,4 +36,12 @@ int count(struct Node* head, int searchFor){
 }
 
 int getNth(struct Node* head, int index){
+    assert(head != NULL);
+    assert(index >= 0);
+    assert(index < length(head));;
+    while(head && index){
+        index--;
+        head = head->next;
+    }
+    return head->data;
 }
